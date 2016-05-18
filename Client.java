@@ -10,9 +10,9 @@ public class Client {
 		// create a socket with entered parameters
 		final Socket socket = new Socket(args[0],Integer.valueOf(args[1]));
 		// read-in from server-side
-	    BufferedReader input = new BufferedReader(
-                new InputStreamReader(socket.getInputStream()));
-	    // write-out with auto-flush
+	    	BufferedReader input = new BufferedReader(
+                	new InputStreamReader(socket.getInputStream()));
+	    	// write-out with auto-flush
 		PrintWriter output = new PrintWriter(socket.getOutputStream(), true);
 		// read-in from user-side
 		BufferedReader user_input = new BufferedReader(new InputStreamReader(System.in));
